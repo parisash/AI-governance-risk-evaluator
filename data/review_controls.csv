@@ -1,1 +1,7 @@
-
+control_id,control_area,control_objective,review_action,evidence_output
+AC-001,Privacy Review,Identify and review AI outputs containing personal or sensitive data,Route output to privacy or data governance reviewer,Privacy review decision
+AC-002,Security Review,Review AI outputs that include security advice or confidential security context,Route output to security reviewer,Security validation note
+AC-003,Policy Alignment,Check AI outputs against privacy security and data governance policy,Reject or correct conflicting output,Policy alignment decision
+AC-004,Human-in-the-Loop Review,Require human review before using high-risk AI outputs in business workflows,Assign accountable reviewer,Human review approval record
+AC-005,Evidence Retention,Maintain evidence of AI output review risk rating and approval decision,Store risk register and executive summary,AI assurance evidence pack
+AC-006,Continuous Improvement,Use failure modes and review outcomes to improve prompts controls and user guidance,Track recurring issues and recommended improvements,AI governance improvement log

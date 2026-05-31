@@ -1,1 +1,9 @@
-
+policy_id,risk_area,policy_requirement,risk_trigger,evidence_required
+P-001,Privacy Leakage,AI outputs must not expose personal data unless there is a valid purpose and review pathway,contains_personal_data = Yes,Prompt/output review record and privacy handling decision
+P-002,Sensitive Data Handling,AI outputs involving sensitive data must be reviewed before use or publication,contains_sensitive_data = Yes,Human review record and data minimisation decision
+P-003,Confidential Information,AI outputs must not disclose confidential internal information beyond authorised audiences,contains_confidential_info = Yes,Access approval and internal-use classification evidence
+P-004,Unsupported Claims,AI outputs should not present unsupported legal privacy security or compliance claims as fact,contains_unsupported_claim = Yes,Fact-check record source validation and reviewer approval
+P-005,Security Advice,AI-generated security advice must be reviewed where it may influence implementation or operational decisions,contains_security_advice = Yes,Security reviewer approval and technical validation evidence
+P-006,Policy Conflict,AI outputs that conflict with privacy security or data governance policy must be rejected or corrected,contains_policy_conflict = Yes,Policy review decision corrected output and rejection reason
+P-007,Human Review,High-risk AI outputs must be routed to a human reviewer before business use,human_review_required = Yes,Reviewer name decision timestamp and approval outcome
+P-008,AI Assurance Evidence,AI evaluation results must be retained as evidence for governance review and continuous improvement,Any high or critical AI risk,AI risk register executive summary and review notes
